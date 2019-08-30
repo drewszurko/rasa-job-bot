@@ -1,0 +1,44 @@
+slots:
+  role_type:
+    type: text
+  positions:
+    type: list
+  first_name:
+    type: text
+  status:
+    type: text
+
+intents:
+  - greet
+  - goodbye
+  - inform
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_info
+  - utter_name
+  - utter_status
+  - action_check_status
+  - action_check_positions
+  - utter_default
+
+entities:
+  - request_type
+  - role_type
+  - positions
+  - first_name
+
+templates:
+  utter_greet:
+    - text: "Hi, I’m Rasa’s recruiting bot. How can I help?"
+  utter_info:
+    - text: "Are you looking for a technical or a business role?"
+  utter_name:
+    - text: "Hi {first_name}! Let me check that for you."
+  utter_status:
+    - text: "Yes, your application has been {status}."
+  utter_goodbye:
+    - text: "Bye"
+  utter_default:
+    - text: "Sorry, I didn’t understand that."

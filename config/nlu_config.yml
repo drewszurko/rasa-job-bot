@@ -1,0 +1,16 @@
+language: "en"
+
+pipeline:
+  - name: "nlp_spacy"
+    model: "en_core_web_md"
+    case_sensitive: true # Helps maintain first_name case sensitivity in templates: utter_name
+  - name: "tokenizer_spacy"
+  - name: "intent_entity_featurizer_regex"
+  - name: "intent_featurizer_spacy"
+  - name: "ner_crf"
+    features: [
+    ["low", "upper", "pos", "pos2"],
+    ["bias", "low", "prefix5", "prefix2", "suffix5", "suffix3", "suffix2", "upper", "digit", "pattern", "pos", "pos2"],
+    ["low",  "upper", "pos", "pos2"]]
+  - name: "ner_synonyms"
+  - name: "intent_classifier_sklearn"

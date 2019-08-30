@@ -1,0 +1,56 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_info
+- utter_name
+- utter_status
+- action_check_status
+- action_check_positions
+- utter_default
+config:
+  store_entities_as_slots: true
+entities:
+- request_type
+- role_type
+- positions
+- first_name
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- inform:
+    use_entities: true
+slots:
+  first_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  positions:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  role_type:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  status:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_default:
+  - text: Sorry, I didn’t understand that.
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hi, I’m Rasa’s recruiting bot. How can I help?
+  utter_info:
+  - text: Are you looking for a technical or a business role?
+  utter_name:
+  - text: Hi {first_name}! Let me check that for you.
+  utter_status:
+  - text: Yes, your application has been {status}.

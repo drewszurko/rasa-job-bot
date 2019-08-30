@@ -1,0 +1,550 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "what's up"
+      },
+      {
+        "intent": "greet",
+        "text": "what up"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "i’d like to know which positions are open right now"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "what jobs do you have available"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "any jobs available"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "what jobs do you have"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "do you have any job openings"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "are there any job openings"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "what positions are open"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "do you have any jobs available"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 26,
+            "end": 30,
+            "value": "job",
+            "entity": "request_type"
+          }
+        ],
+        "text": "do you currently have any jobs"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "Ali",
+            "entity": "first_name"
+          }
+        ],
+        "text": "hi, my name is Ali"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Drew",
+            "entity": "first_name"
+          }
+        ],
+        "text": "my name is Drew"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "Aaron",
+            "entity": "first_name"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "i'm Aaron i applied the other week"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Abbe",
+            "entity": "first_name"
+          }
+        ],
+        "text": "i am Abbe"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Addi",
+            "entity": "first_name"
+          }
+        ],
+        "text": "i'm Addi"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 13,
+            "value": "Dj",
+            "entity": "first_name"
+          },
+          {
+            "start": 45,
+            "end": 56,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "my name is Dj when will i hear back about my application"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Sean",
+            "entity": "first_name"
+          }
+        ],
+        "text": "i'm Sean"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "Matt",
+            "entity": "first_name"
+          },
+          {
+            "start": 24,
+            "end": 35,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "name is Matt what is my application status"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Danielle",
+            "entity": "first_name"
+          }
+        ],
+        "text": "name is Danielle"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "Lori",
+            "entity": "first_name"
+          }
+        ],
+        "text": "good morning, my name is Lori"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "Erica",
+            "entity": "first_name"
+          }
+        ],
+        "text": "good afternoon, my name is Erica"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "Frank",
+            "entity": "first_name"
+          }
+        ],
+        "text": "good evening, my name is Frank"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "Viki",
+            "entity": "first_name"
+          }
+        ],
+        "text": "good morning, i am Viki"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "Sabrina",
+            "entity": "first_name"
+          }
+        ],
+        "text": "good afternoon, i am Sabrina"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "Allan",
+            "entity": "first_name"
+          }
+        ],
+        "text": "good evening, i am Allan"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 2,
+            "end": 9,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "i applied for a job"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 14,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "my application"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 14,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "my application status"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 2,
+            "end": 9,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "i applied when will i hear back"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "application status"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "what is my submission status"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 2,
+            "end": 11,
+            "value": "application",
+            "entity": "request_type"
+          }
+        ],
+        "text": "i submitted"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 2,
+            "end": 11,
+            "value": "technical",
+            "entity": "role_type"
+          }
+        ],
+        "text": "a technical one"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 2,
+            "end": 10,
+            "value": "business",
+            "entity": "role_type"
+          }
+        ],
+        "text": "a business one"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "any",
+            "entity": "role_type"
+          }
+        ],
+        "text": "any role"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "technical",
+            "entity": "role_type"
+          }
+        ],
+        "text": "technical"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "business",
+            "entity": "role_type"
+          }
+        ],
+        "text": "business"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "any",
+            "entity": "role_type"
+          }
+        ],
+        "text": "any"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [
+      {
+        "name": "first_name",
+        "elements": "data/first_name/first_name.txt"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "job",
+        "synonyms": [
+          "positions",
+          "jobs",
+          "position",
+          "available"
+        ]
+      },
+      {
+        "value": "application",
+        "synonyms": [
+          "applied",
+          "submission",
+          "submitted"
+        ]
+      }
+    ]
+  }
+}
